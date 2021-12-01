@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-credit-card',
   templateUrl: './credit-card.component.html',
@@ -10,6 +11,10 @@ export class CreditCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  submit(){
+    console.log("fomr submited")
   }
 
 }

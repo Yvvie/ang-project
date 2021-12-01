@@ -1,1 +1,152 @@
-<p>products works!</p>
+<div class="accordion accordion-flush">
+  <!-- 1st collapse -->
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        id="f1"
+        (click)="accordion('f1')"
+      >
+        Personal
+      </button>
+    </h2>
+    <div *ngIf="id === 'f1'">
+      <div class="card-group">
+        <!-- product 1 -->
+        <div></div>
+        <div class="card mt-5">
+          <div>
+            <h1>Single Device</h1>
+            <h1>€34.95*</h1>
+          </div>
+          <div class="card-body">
+            <button class="card-title btn btn-outline-dark">Buy now</button>
+            <p class="card-text">*First year price €30.99</p>
+            <p class="card-text">
+              <small class="text-muted">1 Device / 1-Year Subscription</small>
+            </p>
+            <p class="card-text">
+              <small class="text-muted">1 license included</small>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 2 -->
+
+        <div class="card mt-5">
+          <div>
+            <h1>Single Device</h1>
+            <h1>€34.97|per year*</h1>
+          </div>
+          <div class="card-body">
+            <button class="card-title btn btn-outline-dark">Buy now</button>
+            <p class="card-text">Save €45 off*</p>
+            <p class="card-text">
+              <small class="text-muted">1 Device / 2-Year Subcription</small>
+            </p>
+            <p class="card-text">
+              <small class="text-muted">*First term price €30.97</small>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+
+        <div class="card mt-5">
+          <div>
+            <h1>Family</h1>
+            <h1>€49.97|per year*</h1>
+          </div>
+          <div class="card-body">
+            <button class="card-title btn btn-outline-dark">Buy now</button>
+            <p class="card-text">Save €65 off*</p>
+            <p class="card-text">
+              <small class="text-muted">10 Devices / 2-Year Subcription</small>
+            </p>
+            <p class="card-text">
+              <small class="text-muted">*First term price €39.97</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2nd collapse -->
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        id="f2"
+        (click)="accordion('f2')"
+      >
+        Enterprise
+      </button>
+    </h2>
+    <div *ngIf="id === 'f2'">
+      <div class="card-group">
+        <!-- product 1 -->
+
+        <div class="card mt-5">
+          <div>
+            <h1>Standard</h1>
+            <h1>€ 74.99</h1>
+          </div>
+          <div class="card-body">
+            <button class="card-title btn btn-outline-dark">Buy now</button>
+            <p class="card-text">Save 40% off*</p>
+            <p class="card-text">
+              <small class="text-muted">1 Device / 1-Year Subscription</small>
+            </p>
+            <p class="card-text">
+              <small class="text-muted">1 license included</small>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 2 -->
+
+        <div class="card mt-5">
+          <div>
+            <h1>Deluxe</h1>
+            <h1>€ 84.99*</h1>
+          </div>
+          <div class="card-body">
+            <button class="card-title btn btn-outline-dark">Buy now</button>
+            <p class="card-text">Save 57% off*</p>
+            <p class="card-text">
+              <small class="text-muted">1 Device / 1-Year Subscription</small>
+            </p>
+            <p class="card-text">
+              <small class="text-muted">1 license included</small>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+
+        <div class="card mt-5">
+          <div>
+            <h1>Premium</h1>
+            <h1>€ 94.99*</h1>
+          </div>
+          <div class="card-body">
+            <button class="card-title btn btn-outline-dark">Buy now</button>
+            <p class="card-text">*Save 60% off*</p>
+            <p class="card-text">
+              <small class="text-muted">1 Device / 1-Year Subscription</small>
+            </p>
+            <p class="card-text">
+              <small class="text-muted">1 license included</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="w-100 btn btn-primary btn-lg" type="submit">Continue</button>
+</div>
